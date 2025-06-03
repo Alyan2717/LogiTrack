@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #ffffff;
+    /* Adjust to match LogiTrack's primary color */
+    --secondary-color: #ffffff;
+    --accent-color: #ff4e4e;
+    /* Example accent color */
+    --font-family: "Roboto", sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+    --spacing-unit: 1rem;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+section {
+    height: 100vh;
+    padding: 100px;
+}
+
+a {
+    text-decoration: none;
+}

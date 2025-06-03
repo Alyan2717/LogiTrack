@@ -1,0 +1,176 @@
+/* -------------------------------------Dashboard Styles------------------------------------- */
+.dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('/backgroundImage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.title {
+    color: #ff0000 !important;
+    font-size: 80px;
+}
+
+.des1 {
+    font-size: 60px;
+    color: white !important;
+}
+
+.des2 {
+    font-size: 20px;
+    color: white !important;
+    padding-bottom: 10vh;
+}
+
+.btn-get-started {
+    background: linear-gradient(135deg, #ff0000, #ff3a3a);
+    color: white;
+    border: none;
+    border-radius: 0px;
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-get-started:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.5);
+}
+
+.btn-get-started::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.btn-get-started:hover::after {
+    transform: translateX(100%);
+}
+
+/* ------------------------------------------Streamline Styles------------------------------------------ */
+.streamline-description {
+    margin-bottom: 30px;
+}
+
+.image-cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-card {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    background-image: url('/streamlineImage.jpg');
+    /* 👈 Replace with your image path */
+    background-size: 200% 100%;
+    /* Double width so we can show half on each card */
+    background-repeat: no-repeat;
+    background-position-y: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left half of the image */
+.image-card.left {
+    background-position-x: left;
+    margin-bottom: 50px;
+}
+
+/* Right half of the image */
+.image-card.right {
+    background-position-x: right;
+}
+
+/* ------------------------------------------Struggling Styles------------------------------------------ */
+.struggling-description {
+    margin-bottom: 30px;
+}
+
+.image-cards-strugle-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-card-strugle {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    background-image: url('/strugglingImage.jpg');
+    /* 👈 Replace with your image path */
+    background-size: 200% 100%;
+    /* Double width so we can show half on each card */
+    background-repeat: no-repeat;
+    background-position-y: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left half of the image */
+.image-card-strugle.left {
+    background-position-x: left;
+    margin-bottom: 50px;
+}
+
+/* Right half of the image */
+.image-card-strugle.right {
+    background-position-x: right;
+}
+
+/* ------------------------------------------Market Styles------------------------------------------ */
+.market {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('/market.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.market-title {
+    font-size: 100px;
+    color: #bfbfbf;
+}
