@@ -24,28 +24,35 @@
     height: 100vh;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0.5;
+    opacity: 1;
     pointer-events: none;
+    z-index: 1;
 }
 
 .title {
-    color: #ff0000 !important;
+    color: #c0392b !important;
     font-size: 80px;
+    position: relative;
+    z-index: 2;
 }
 
 .des1 {
     font-size: 60px;
     color: white !important;
+    position: relative;
+    z-index: 2;
 }
 
 .des2 {
     font-size: 20px;
     color: white !important;
     padding-bottom: 10vh;
+    position: relative;
+    z-index: 2;
 }
 
 .btn-get-started {
-    background: linear-gradient(135deg, #ff0000, #ff3a3a);
+    background: linear-gradient(135deg, #c0392b, rgb(255, 81, 81));
     color: white;
     border: none;
     border-radius: 0px;
@@ -58,6 +65,7 @@
     box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
     position: relative;
     overflow: hidden;
+    z-index: 2;
 }
 
 .btn-get-started:hover {
@@ -172,5 +180,5 @@
 
 .market-title {
     font-size: 100px;
-    color: #bfbfbf;
+    color: #ffffff;
 }

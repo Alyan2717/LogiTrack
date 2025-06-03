@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
+import { ContactusComponent } from './features/contactus/contactus/contactus.component';
 
 export const routes: Routes = [
     // {
@@ -12,10 +13,10 @@ export const routes: Routes = [
         component: DashboardComponent,
         //canActivate: [authGuard]
     },
-    // {
-    //     path: 'contacts',
-    //     component: ContactComponent
-    // },
+    {
+        path: 'contactus',
+        component: ContactusComponent
+    },
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: '**', redirectTo: '/dashboard' }
 ];
