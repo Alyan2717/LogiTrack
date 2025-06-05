@@ -1,38 +1,38 @@
 <!-- ----------------------------|| NAV BAR ||---------------------------- -->
-<header>
-    <nav class="navbar navbar-expand-lg navBorder">
-        <div class="container">
-            <a class="navbar-brand" href="#"><span class="navLogo">LogiTrack</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" /> -->
-                    <div class="d-flex align-items-center p-2" style="color: #000;">
-                        <i class="fas fa-envelope p-2"></i>
-                        <p class="navPhone" href="tel:+4915510609118">+49 15510-609118</p>
-                    </div>
-                    <div class="btn">
-                        <a class="btn-contact btn btn-dark" routerLink="/contactus">Contact Us</a>
-                    </div>
-                </form>
-            </div>
+<!-- <header> -->
+<nav class="navbar navbar-expand-lg navBorder">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span class="navLogo">LogiTrack</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" /> -->
+                <div class="d-flex align-items-center p-2" style="color: #000;">
+                    <i class="fas fa-envelope p-2"></i>
+                    <p class="navPhone" href="tel:+4915510609118">+49 15510-609118</p>
+                </div>
+                <div class="btn">
+                    <a class="btn-contact btn btn-dark" routerLink="/contactus">Contact Us</a>
+                </div>
+            </form>
         </div>
-    </nav>
-</header>
+    </div>
+</nav>
+<!-- </header> -->
 
 <router-outlet />
 
@@ -40,7 +40,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-12">
                 <a routerLink="/dashboard" class="footer-logo">Logi<span>Track</span></a>
                 <p class="about-text">We are a team of passionate people whose goal is to improve everyone's life
                     through disruptive products. Our products are designed for small to medium size companies willing to
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-12">
                 <h5 class="footer-title">Useful Links</h5>
                 <ul class="footer-links">
                     <li><a href="#"><i class="fas fa-chevron-right"></i> About us</a></li>
@@ -67,7 +67,7 @@
                 </ul>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12">
                 <h5 class="footer-title">Connect with us</h5>
 
                 <div class="contact-info">

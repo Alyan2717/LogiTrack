@@ -21,11 +21,11 @@ body {
     background-color: var(--secondary-color);
 }
 
-section {
-    height: 100vh;
-    padding: 100px;
-}
-
 a {
     text-decoration: none;
+}
+
+section {
+    padding: 70px 0 30px;
+    margin-top: auto;
 }

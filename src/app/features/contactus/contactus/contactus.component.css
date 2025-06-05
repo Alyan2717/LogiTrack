@@ -40,6 +40,15 @@ section.contact-form {
     z-index: 2;
 }
 
+.content {
+    padding-left: 50px !important;
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+}
+
 .btn-contact {
     background: linear-gradient(135deg, #000000, #080808);
     color: white;
