@@ -2,10 +2,6 @@ section.contactus {
     height: 20vh;
 }
 
-section.contact-form {
-    padding: 20px;
-}
-
 .contactus {
     text-align: justify;
     background-image: url('/backgroundImage.jpg');
@@ -35,18 +31,8 @@ section.contact-form {
 
 .title {
     color: #ffffff !important;
-    font-size: 50px;
     position: relative;
     z-index: 2;
-}
-
-.content {
-    padding-left: 50px !important;
-}
-
-.btn {
-    display: flex;
-    justify-content: end;
 }
 
 .btn-contact {
@@ -83,4 +69,10 @@ section.contact-form {
 
 .btn-contact:hover::after {
     transform: translateX(100%);
+}
+
+@media screen and (max-width: 768px) {
+    .btn-contact {
+        margin-bottom: 30px;
+    }
 }

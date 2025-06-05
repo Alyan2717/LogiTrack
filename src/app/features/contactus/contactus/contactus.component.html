@@ -1,17 +1,21 @@
 <!-- -------------------------------------Title------------------------------------- -->
 <section class="contactus">
-    <div class="container">
-        <div class="overlay"></div>
-        <div class="title-content">
-            <h1 class="title">Contact Us</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="overlay"></div>
+                <div class="container">
+                    <h1 class="title">Contact Us</h1>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 <!-- -------------------------------------ContactForm------------------------------------- -->
-<section class="contact-form">
+<section class="">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-6 col-md-12">
                 <p class="contact-content" style="color: black;">Contact us about anything related to our company or
                     services.
                     We'll do our best to get back to you as soon as possible.</p>
@@ -33,12 +37,13 @@
                         <textarea id="message" formControlName="message" class="form-control" rows="5"
                             required></textarea>
                     </div>
-                    <div class="btn">
-                        <a class="btn-contact btn btn-dark" routerLink="/contactus">Send Message</a>
+                    <div class="d-flex justify-content-end">
+                        <a class="btn-contact btn btn-dark" routerLink="/contactus">Submit</a>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-4 content" style="color: black;">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 col-md-12" style="color: black;">
                 <h2>My Company</h2>
                 <p class="pt-4">1234 Street Name, Berlin, Germany, 13349</p>
                 <p>+49 15510-609118</p>
