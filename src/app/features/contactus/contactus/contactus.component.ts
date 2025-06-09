@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ContactusService } from './contactus.service/contactus.service';
 
 @Component({
   selector: 'app-contactus',
@@ -10,29 +11,39 @@ import { RouterModule } from '@angular/router';
   templateUrl: './contactus.component.html',
   styleUrl: './contactus.component.css'
 })
-export class ContactusComponent implements OnInit {
-  contactForm: FormGroup | undefined;
-  constructor(private fb: FormBuilder) {
+export class ContactusComponent {
+  contactForm: FormGroup;
 
-  }
-
-  ngOnInit(): void {
-    this.initForm();
-  }
-
-  // Initialize the form with FormBuilder
-  initForm() {
+  constructor(private fb: FormBuilder, private contactService: ContactusService) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
+      phone: [''],
       email: ['', [Validators.required, Validators.email]],
+      company: [''],
       subject: ['', Validators.required],
-      message: ['', [Validators.required]]
+      message: ['', Validators.required]
     });
   }
 
   onSubmit() {
-    if (this.contactForm && this.contactForm.valid) {
+    if (this.contactForm.valid) {
       const formData = this.contactForm.value;
+      console.log('Form Data:', formData);
+      debugger
+      this.contactService.submitContactUsForm(formData).subscribe({
+        next: (response) => {
+          console.log('Form submitted successfully', response);
+        },
+        error: (error) => {
+          console.error('Error submitting form', error);
+        }
+      });
+
+      // Reset form after submission
+      this.contactForm.reset();
+    } else {
+      // Handle invalid form
+      console.log('Form is invalid');
     }
   }
 }

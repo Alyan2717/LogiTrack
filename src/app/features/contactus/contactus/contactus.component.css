@@ -76,3 +76,9 @@ section.contactus {
         margin-bottom: 30px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .contactPad {
+        display: flex;
+    }
+}
