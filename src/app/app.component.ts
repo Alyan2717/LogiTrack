@@ -10,4 +10,5 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'logistics-frontend';
+  mEmail: string = 'alyankhan2717@gmail.com';
 }

@@ -13,6 +13,7 @@ import { ContactusService } from './contactus.service/contactus.service';
 })
 export class ContactusComponent {
   contactForm: FormGroup;
+  mEmail: string = 'alyankhan2717@gmail.com';
 
   constructor(private fb: FormBuilder, private contactService: ContactusService) {
     this.contactForm = this.fb.group({

@@ -13,7 +13,7 @@
                     <a class="nav-link" routerLink="/services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" routerLink="/pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>
@@ -51,18 +51,14 @@
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-12">
                 <h5 class="footer-title">Useful Links</h5>
                 <ul class="footer-links">
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> About us</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Products</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Services</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Legal</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    <li><a routerLink="/aboutUs"><i class="fas fa-chevron-right"></i> About us</a></li>
+                    <li><a routerLink="/services"><i class="fas fa-chevron-right"></i> Services</a></li>
                     <li><a routerLink="/contactus"><i class="fas fa-chevron-right"></i> Contact us</a></li>
                 </ul>
             </div>
@@ -75,7 +71,7 @@
                         <!-- <i class="fas fa-envelope"></i> -->
                         <div>
                             <span>Email us at</span><br>
-                            <a href="mailto:alyankhan2717@gmail.com">alyankhan2717gmail.com</a>
+                            <a href="mailto:alyankhan2717@gmail.com">{{mEmail}}</a>
                         </div>
                     </div>
 

@@ -32,7 +32,7 @@
 }
 
 .btn-get-started {
-    background: linear-gradient(135deg, #ff0000, #ff3a3a);
+    background: linear-gradient(135deg, #c0392b, #ff3a3a);
     color: white;
     border: none;
     border-radius: 0px;
@@ -140,6 +140,10 @@
 }
 
 /* ------------------------------------------Market Styles------------------------------------------ */
+section.market {
+    min-height: 50vh;
+}
+
 .market {
     display: flex;
     align-items: center;
@@ -236,4 +240,14 @@
         display: flex;
         justify-content: center;
     }
+}
+
+/* ------------------------------------------Pricing------------------------------------------ */
+.pricing {
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* min-height: 100vh; */
+    background-color: #c0392b;
+    color: white;
 }
